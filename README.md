@@ -1,5 +1,7 @@
 # VCH Wiki
 
+Personal documentation.
+
 ## Customize configuration
 
 See [VitePress Configuration Reference](https://vitepress.dev/reference/site-config).
