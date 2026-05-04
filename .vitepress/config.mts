@@ -4,6 +4,29 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'VCH Wiki',
   description: 'My personal documentation',
+  head: [
+    ['meta', { property: 'og:title', content: 'VCH Wiki' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:description', content: 'My personal documentation' }],
+    ['meta', { property: 'og:url', content: 'https://vchychuzhko.github.io/wiki' }],
+    ['meta', { property: 'og:image', content: 'https://vchychuzhko.github.io/wiki/og.jpg' }],
+    ['meta', { property: 'og:image:type', content: 'image/jpeg' }],
+    ['meta', { property: 'og:image:height', content: '200' }],
+    ['meta', { property: 'og:image:width', content: '200' }],
+    ['meta', { name: 'theme-color', content: '#ffffff' }],
+    ['link', { rel: 'icon', href: '/favicon.ico', sizes: 'any' }],
+    ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
+    ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon-180x180.png', sizes: '180x180' }],
+  ],
+  transformPageData({ title, description, frontmatter }) {
+    if (!title || !description) return
+
+    frontmatter.head ??= []
+    frontmatter.head.push(
+      ['meta', { property: 'og:title', content: title + ' | VCH Wiki' }],
+      ['meta', { property: 'og:description', content: description }],
+    )
+  },
   srcExclude: ['**/README.md', '**/LICENSE.md'],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
