@@ -91,5 +91,9 @@ export default defineConfig({
     },
 
     lastUpdated: true,
+
+    footer: {
+      copyright: 'Copyright © 2026 Vladyslav Chychuzhko',
+    },
   }
 })
