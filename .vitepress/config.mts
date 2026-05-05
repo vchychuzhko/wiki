@@ -27,6 +27,7 @@ export default defineConfig({
       ['meta', { property: 'og:description', content: description }],
     )
   },
+  base: '/wiki/',
   srcExclude: ['**/README.md', '**/LICENSE.md'],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
