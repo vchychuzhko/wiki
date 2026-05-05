@@ -14,9 +14,9 @@ export default defineConfig({
     ['meta', { property: 'og:image:height', content: '200' }],
     ['meta', { property: 'og:image:width', content: '200' }],
     ['meta', { name: 'theme-color', content: '#ffffff' }],
-    ['link', { rel: 'icon', href: '/favicon.ico', sizes: 'any' }],
-    ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
-    ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon-180x180.png', sizes: '180x180' }],
+    ['link', { rel: 'icon', href: '/wiki/favicon.ico', sizes: 'any' }],
+    ['link', { rel: 'icon', href: '/wiki/favicon.svg', type: 'image/svg+xml' }],
+    ['link', { rel: 'apple-touch-icon', href: '/wiki/apple-touch-icon-180x180.png', sizes: '180x180' }],
   ],
   transformPageData({ title, description, frontmatter }) {
     if (!title || !description) return
