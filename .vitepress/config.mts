@@ -29,6 +29,7 @@ export default defineConfig({
   },
   base: '/wiki/',
   srcExclude: ['**/README.md', '**/LICENSE.md'],
+  ignoreDeadLinks: 'localhostLinks',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     search: {
