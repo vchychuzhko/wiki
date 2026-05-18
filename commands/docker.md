@@ -18,7 +18,15 @@ docker ps
 Enter container:
 
 ```bash
-docker exec -it <container-id-or-name> bash
+docker exec -it <container> bash
+```
+
+## docker logs
+
+Show and follow container logs from 1m before:
+
+```bash
+docker logs --since=1m --follow <container>
 ```
 
 ## docker compose

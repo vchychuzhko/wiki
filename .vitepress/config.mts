@@ -54,6 +54,7 @@ export default defineConfig({
             { text: 'Git', link: '/git' },
             { text: 'Docker', link: '/docker' },
             { text: 'Docker Hub', link: '/docker-hub' },
+            { text: 'Magento', link: '/magento' },
           ]
         },
       ],
@@ -76,6 +77,7 @@ export default defineConfig({
           items: [
             { text: 'Docker', link: '/docker' },
             { text: 'Portainer', link: '/portainer' },
+            { text: 'Jellyfin', link: '/jellyfin' },
           ]
         },
       ],
