@@ -7,7 +7,7 @@ description: List of Git commands
 
 ## git commit
 
-Amend changes to last commit without editing the message:
+Amend changes to the last commit without editing the message:
 
 ```bash
 git commit --amend --no-edit
@@ -15,7 +15,7 @@ git commit --amend --no-edit
 
 ## git stash
 
-Restore deleted stash:
+Restore the deleted stash:
 
 ```bash
 git stash apply <stash-hash>
@@ -29,21 +29,27 @@ Start interactive rebase:
 git rebase -i "<commit-hash>^"
 ```
 
+Keep merge commits intact:
+
+```bash
+git rebase --rebase-merges
+```
+
 ## git branch
 
-Rename current local branch:
+Rename the current local branch:
 
 ```bash
 git branch -m <new-name>
 ```
 
-Push and rename remote branch:
+Push and rename a remote branch:
 
 ```bash
 git push origin :<old-name> <new-name>
 ```
 
-Remove branch locally:
+Remove the branch locally:
 
 ```bash
 git branch -D <branch>
@@ -55,7 +61,7 @@ Remove branch on remote:
 git push <remote> :<branch>
 ```
 
-Clean up local branch list (remove all merged branches locally):
+Clean up the local branch list (remove all merged branches locally):
 
 ```bash
 git branch --merged | egrep -v "(^\*|master|staging)" | xargs git branch -D
@@ -83,7 +89,7 @@ Save the last commit to patch:
 git diff HEAD^ HEAD > diff.patch
 ```
 
-Save difference between two files to patch:
+Save the difference between two files to patch:
 
 ```bash
 diff -Naur <old-version> <new-version> > diff.patch

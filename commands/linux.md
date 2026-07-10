@@ -23,7 +23,7 @@ grep --exclude-dir={<excluded-directories>} -rnw './<path>' -e '<text>'
 
 ## find
 
-Search for file:
+Search for a file:
 
 ```bash
 find ./<path> -type f -name "<file>"
@@ -31,16 +31,30 @@ find ./<path> -type f -name "<file>"
 
 ## ssh-keygen
 
-Generate SSH key:
+Generate an SSH key:
 
 ```bash
 ssh-keygen
 ```
 
-## sudo -u
+## sudo
 
 Run command as another user:
 
 ```bash
 sudo -u <user> <command>
+```
+
+## lsattr / chattr
+
+Check file attributes:
+
+```bash
+lsattr -a
+```
+
+Remove the immutable flag from a file:
+
+```bash
+chattr -i <file>
 ```
