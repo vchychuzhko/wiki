@@ -14,14 +14,14 @@ services:
   jellyfin:
     image: jellyfin/jellyfin
     container_name: jellyfin
+    restart: unless-stopped
     ports:
-      - 8096:8096/tcp
-      - 7359:7359/udp
+      - "8096:8096/tcp"
+      - "7359:7359/udp"
     volumes:
       - /srv/jellyfin/config:/config
       - /srv/jellyfin/cache:/cache
       - /srv/media:/media
-    restart: unless-stopped
 ```
 
 ## Usage

@@ -37,50 +37,66 @@ export default defineConfig({
     },
 
     nav: [
-      { text: 'Home', link: '/introduction' },
-      { text: 'Commands', link: '/commands/' },
-      { text: 'Tools', link: '/tools/' },
-      { text: 'Selfhosted', link: '/selfhosted/' },
+      { text: 'Commands', link: '/commands/', activeMatch: '/commands/' },
+      { text: 'Tools', link: '/tools/', activeMatch: '/tools/' },
+      { text: 'Selfhosted', link: '/selfhosted/', activeMatch: '/selfhosted/' },
     ],
 
     sidebar: {
-      '/commands/': [
-        {
-          text: 'Commands',
-          link: '/',
-          base: '/commands',
-          items: [
-            { text: 'Linux', link: '/linux' },
-            { text: 'Git', link: '/git' },
-            { text: 'Docker', link: '/docker' },
-            { text: 'Docker Hub', link: '/docker-hub' },
-            { text: 'Magento', link: '/magento' },
-          ]
-        },
-      ],
-      '/tools/': [
-        {
-          text: 'Tools',
-          link: '/',
-          base: '/tools',
-          items: [
-            { text: 'Magento Cloud', link: '/magento-cloud' },
-            { text: 'AWS & Kubernetes', link: '/kubernetes' },
-          ]
-        },
-      ],
-      '/selfhosted/': [
-        {
-          text: 'Selfhosted',
-          link: '/',
-          base: '/selfhosted',
-          items: [
-            { text: 'Docker', link: '/docker' },
-            { text: 'Portainer', link: '/portainer' },
-            { text: 'Jellyfin', link: '/jellyfin' },
-          ]
-        },
-      ],
+      '/commands/': {
+        base: '/commands',
+        items: [
+          {
+            text: 'Introduction',
+            link: '/',
+          },
+          {
+            items: [
+              { text: 'Linux', link: '/linux' },
+              { text: 'Git', link: '/git' },
+              { text: 'Docker', link: '/docker' },
+              { text: 'Docker Hub', link: '/docker-hub' },
+            ]
+          },
+          {
+            text: 'Frameworks',
+            items: [
+              { text: 'Magento', link: '/magento' },
+            ]
+          }
+        ]
+      },
+      '/tools/': {
+        base: '/tools',
+        items: [
+          {
+            text: 'Introduction',
+            link: '/',
+          },
+          {
+            items: [
+              { text: 'Magento Cloud', link: '/magento-cloud' },
+              { text: 'AWS & Kubernetes', link: '/kubernetes' },
+            ]
+          },
+        ],
+      },
+      '/selfhosted/': {
+        base: '/selfhosted',
+        items: [
+          {
+            text: 'Introduction',
+            link: '/',
+          },
+          {
+            items: [
+              { text: 'Docker', link: '/docker' },
+              { text: 'Portainer', link: '/portainer' },
+              { text: 'Jellyfin', link: '/jellyfin' },
+            ]
+          },
+        ]
+      },
     },
 
     socialLinks: [

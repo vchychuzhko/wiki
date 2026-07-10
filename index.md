@@ -7,8 +7,8 @@ hero:
   tagline: My personal documentation
   actions:
     - theme: brand
-      text: Start Here
-      link: /introduction
+      text: Get started
+      link: /commands/
     - theme: alt
       text: Personal Website
       link: https://vchychuzhko.com
