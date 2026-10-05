@@ -55,6 +55,7 @@ export default defineConfig({
               { text: 'Linux', link: '/linux' },
               { text: 'Git', link: '/git' },
               { text: 'Docker', link: '/docker' },
+              { text: 'Elasticsearch', link: '/elasticsearch' },
             ]
           },
           {
