@@ -91,7 +91,7 @@ export default defineConfig({
           {
             items: [
               { text: 'Docker', link: '/docker' },
-              { text: 'Portainer', link: '/portainer' },
+              { text: 'Dockhand', link: '/dockhand' },
             ]
           },
           {
