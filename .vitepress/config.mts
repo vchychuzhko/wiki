@@ -91,8 +91,14 @@ export default defineConfig({
             items: [
               { text: 'Docker', link: '/docker' },
               { text: 'Portainer', link: '/portainer' },
-              { text: 'Jellyfin', link: '/jellyfin' },
             ]
+          },
+          {
+            text: 'Media',
+            items: [
+              { text: 'Jellyfin', link: '/jellyfin' },
+              { text: 'Navidrome', link: '/navidrome' },
+            ],
           },
         ]
       },
