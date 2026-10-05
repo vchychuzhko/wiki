@@ -34,7 +34,7 @@ sudo usermod -aG docker $USER
 Confirm installation:
 
 ```bash
-sudo systemctl status docker
+sudo service docker status
 ```
 
 *See [Docker Commands](/commands/docker.md)*

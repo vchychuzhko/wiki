@@ -19,10 +19,14 @@ services:
       - "8096:8096/tcp"
       - "7359:7359/udp"
     volumes:
-      - /srv/jellyfin/config:/config
-      - /srv/jellyfin/cache:/cache
-      - /srv/media:/media
+      - jellyfin_config:/config
+      - /home/user/jellyfin/media:/media
+
+volumes:
+  jellyfin_config:
 ```
+
+- *Set your actual user's name for the media volume*
 
 ## Usage
 
